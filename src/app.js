@@ -75,8 +75,8 @@ function renderReviewNext() {
     //  renderReview()
     //}
 
-      index++
-      container.innerHTML = `
+    index++
+    container.innerHTML = `
     <div class="review">
        <img class="review__image" src="${reviews[index].image}"/>
        <p class="review__name">${reviews[index].name}</p>
@@ -91,15 +91,14 @@ function renderReviewNext() {
        
     </div>
       `
-  const buttonLastReview = document.getElementById('review_last')
-  buttonLastReview.addEventListener('click', renderReviewLast)
+    const buttonLastReview = document.getElementById('review_last')
+    buttonLastReview.addEventListener('click', renderReviewLast)
 
-  const buttonNextReview = document.getElementById('review_next')
-  buttonNextReview.addEventListener('click', renderReviewNext)
+    const buttonNextReview = document.getElementById('review_next')
+    buttonNextReview.addEventListener('click', renderReviewNext)
 
-  const buttonSurpriseReview = document.getElementById('review_surprise')
-  buttonSurpriseReview.addEventListener('click', renderReviewSurprise)
-
+    const buttonSurpriseReview = document.getElementById('review_surprise')
+    buttonSurpriseReview.addEventListener('click', renderReviewSurprise)
 }
 
 function renderReviewLast() {
