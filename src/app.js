@@ -112,9 +112,9 @@ function renderReviewLast() {
         
          <div class="review__buttons">
          
-           <button class="review__buttons_arrow_last_next" id="review_last"><i class="fa-solid fa-chevron-left"></i></button>
-           <button class="review__buttons_surprise" id="review_surprise">Surprise</i></button>
-           <button class="review__buttons_arrow_last_next" id="review_next"><i class="fa-solid fa-chevron-right"></i></button>
+           <button class="review__buttons_arrow_last_next review__button" id="review_last"><i class="fa-solid fa-chevron-left"></i></button>
+           <button class="review__buttons_surprise review__button" id="review_surprise">Surprise</i></button>
+           <button class="review__buttons_arrow_last_next review__button" id="review_next"><i class="fa-solid fa-chevron-right"></i></button>
          </div>
          
       </div>

@@ -75,9 +75,7 @@ body {
     font-weight: 600;
     color: #3ebd93;
 }
-.review__buttons_arrow_last_next:hover {
-    cursor: pointer;
-}
+
 .review__buttons_surprise {
     border: 1px solid #c6f7e2;
     border-radius: 2px;
@@ -85,6 +83,6 @@ body {
     color: #3ebd93;
     font-family: IBM Plex Serif;
 }
-.review__buttons_surprise:hover {
+.review__button:hover {
     cursor: pointer;
 }
