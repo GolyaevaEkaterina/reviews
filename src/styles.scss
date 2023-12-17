@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: IBM Plex Serif;
+    background-color: #c6f7e2;
+    background-image: url(/src/images/background2.jpg);
+    background-size: cover;
+}
+
+.title {
+    margin: 0 auto;
+    max-width: 700px;
+
+    font-size: 40px;
+    font-weight: 400;
+    font-style: oblique;
+    color: #014d40;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+    height: 400px;
+    background-color: #effcf6;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #014d40;
+}
+
+.review {
+    font-style: oblique;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.review__name {
+    font-size: 30px;
+    font-weight: 600;
+    color: #014d40;
+    text-decoration: double;
+}
+
+.review__review {
+    text-align: center;
+    width: 60%;
+    color: #3ebd93;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.review__image {
+    height: 50px;
+    width: 30px;
+}
+
+.review__buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.review__buttons_arrow_last_next {
+    border: none;
+    background-color: #effcf6;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3ebd93;
+}
+.review__buttons_surprise {
+    border: 1px solid #c6f7e2;
+    border-radius: 2px;
+    background-color: #effcf6;
+    color: #3ebd93;
+    font-family: IBM Plex Serif;
+}

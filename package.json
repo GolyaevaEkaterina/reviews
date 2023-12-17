@@ -1,12 +1,16 @@
 {
-  "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
-  },
-  "devDependencies": {
-    "parcel": "^2.10.3"
-  },
-  "dependencies": {
-    "date-fns": "^2.30.0"
-  }
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html",
+        "format": "prettier . --write"
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "2.10.3",
+        "parcel": "^2.10.3",
+        "prettier": "3.1.0"
+    },
+    "dependencies": {
+        "date-fns": "^2.30.0",
+        "sass": "^1.69.5"
+    }
 }
