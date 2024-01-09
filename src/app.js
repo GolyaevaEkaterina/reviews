@@ -44,9 +44,9 @@ let index = 0
 function renderReview() {
     container.innerHTML = `
       <div class="review">
-         <img class="review__image" src="${reviews[0].image}"/>
-         <p class="review__name">${reviews[0].name}</p>
-         <p class="review__review">${reviews[0].review}</p>
+         <img class="review__image" src="${reviews[index].image}"/>
+         <p class="review__name">${reviews[index].name}</p>
+         <p class="review__review">${reviews[index].review}</p>
         
          <div class="review__buttons">
          
@@ -74,29 +74,7 @@ function renderReviewNext() {
 
     if (index <= final) {
         console.log(index)
-        container.innerHTML = `
-    <div class="review">
-       <img class="review__image" src="${reviews[index].image}"/>
-       <p class="review__name">${reviews[index].name}</p>
-       <p class="review__review">${reviews[index].review}</p>
-      
-       <div class="review__buttons">
-       
-         <button class="review__buttons_arrow_last_next review__button" id="review_last"><i class="fa-solid fa-chevron-left"></i></button>
-         <button class="review__buttons_surprise review__button" id="review_surprise">Surprise</button>
-         <button class="review__buttons_arrow_last_next review__button" id="review_next"><i class="fa-solid fa-chevron-right"></i></button>
-       </div>
-       
-    </div>
-      `
-        const buttonLastReview = document.getElementById('review_last')
-        buttonLastReview.addEventListener('click', renderReviewLast)
-
-        const buttonNextReview = document.getElementById('review_next')
-        buttonNextReview.addEventListener('click', renderReviewNext)
-
-        const buttonSurpriseReview = document.getElementById('review_surprise')
-        buttonSurpriseReview.addEventListener('click', renderReviewSurprise)
+        renderReview()
     } else {
         index = 0
         renderReview()
@@ -111,53 +89,10 @@ function renderReviewLast() {
     console.log(final)
 
     if (index >= 0) {
-        container.innerHTML = `
-      <div class="review">
-         <img class="review__image" src="${reviews[index].image}"/>
-         <p class="review__name">${reviews[index].name}</p>
-         <p class="review__review">${reviews[index].review}</p>
-        
-         <div class="review__buttons">
-         
-           <button class="review__buttons_arrow_last_next review__button" id="review_last"><i class="fa-solid fa-chevron-left"></i></button>
-           <button class="review__buttons_surprise review__button" id="review_surprise">Surprise</i></button>
-           <button class="review__buttons_arrow_last_next review__button" id="review_next"><i class="fa-solid fa-chevron-right"></i></button>
-         </div>
-         
-      </div>
-        `
-        const buttonLastReview = document.getElementById('review_last')
-        buttonLastReview.addEventListener('click', renderReviewLast)
-
-        const buttonNextReview = document.getElementById('review_next')
-        buttonNextReview.addEventListener('click', renderReviewNext)
-
-        const buttonSurpriseReview = document.getElementById('review_surprise')
-        buttonSurpriseReview.addEventListener('click', renderReviewSurprise)
+        renderReview()
     } else {
         index = final
-        container.innerHTML = `
-      <div class="review">
-         <img class="review__image" src="${reviews[final].image}"/>
-         <p class="review__name">${reviews[final].name}</p>
-         <p class="review__review">${reviews[final].review}</p>
-        
-         <div class="review__buttons">
-         
-           <button class="review__buttons_arrow_last_next review__button" id="review_last"><i class="fa-solid fa-chevron-left"></i></button>
-           <button class="review__buttons_surprise review__button" id="review_surprise">Surprise</button>
-           <button class="review__buttons_arrow_last_next review__button" id="review_next"><i class="fa-solid fa-chevron-right"></i></button>
-         </div>
-      </div>
-         `
-        const buttonLastReview = document.getElementById('review_last')
-        buttonLastReview.addEventListener('click', renderReviewLast)
-
-        const buttonNextReview = document.getElementById('review_next')
-        buttonNextReview.addEventListener('click', renderReviewNext)
-
-        const buttonSurpriseReview = document.getElementById('review_surprise')
-        buttonSurpriseReview.addEventListener('click', renderReviewSurprise)
+        renderReview()
     }
 }
 
@@ -167,30 +102,7 @@ function renderReviewSurprise() {
     console.log(surpriseReview)
     console.log(index)
 
-    container.innerHTML = `
-      <div class="review">
-         <img class="review__image" src="${reviews[surpriseReview].image}"/>
-         <p class="review__name">${reviews[surpriseReview].name}</p>
-         <p class="review__review">${reviews[surpriseReview].review}</p>
-        
-         <div class="review__buttons">
-         
-           <button class="review__buttons_arrow_last_next review__button" id="review_last"><i class="fa-solid fa-chevron-left"></i></button>
-           <button class="review__buttons_surprise review__button" id="review_surprise">Surprise</i></button>
-           <button class="review__buttons_arrow_last_next review__button" id="review_next"><i class="fa-solid fa-chevron-right"></i></button>
-         </div>
-         
-      </div>
-        `
-
-    const buttonLastReview = document.getElementById('review_last')
-    buttonLastReview.addEventListener('click', renderReviewLast)
-
-    const buttonNextReview = document.getElementById('review_next')
-    buttonNextReview.addEventListener('click', renderReviewNext)
-
-    const buttonSurpriseReview = document.getElementById('review_surprise')
-    buttonSurpriseReview.addEventListener('click', renderReviewSurprise)
+    renderReview()
 }
 
 renderReview()
