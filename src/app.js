@@ -34,6 +34,12 @@ let reviews = [
         image: '/src/images/Jasmine.jpg',
         name: 'Jasmine',
         review: 'Всю ночь я каталась с прекрасным принцем на ковре самолете. Он оказался очень эрудированным и рассказал мне про звезды и планеты, а в конце предложил бесплатный расклад Таро. '
+    },
+    {
+        id: counter++,
+        image: '/src/images/Jasmine.jpg',
+        name: 'Mulan',
+        review: 'I dont speak Russian'
     }
 ]
 
